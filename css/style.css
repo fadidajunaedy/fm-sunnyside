@@ -115,6 +115,10 @@ section[class="hero"] .hero-container img {
 }
 
 @media screen and (max-width: 567px) {
+  section[class="hero"] {
+    height: 60vh;
+    background-image: url("/images/mobile/image-header.jpg");
+  }
   section[class="hero"] nav .nav-links {
     position: absolute;
     background-color: white;
@@ -158,6 +162,23 @@ section[class="hero"] .hero-container img {
   section[class="hero"] nav .nav-active {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+  }
+  section[class="hero"] .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 48px 0px;
+  }
+  section[class="hero"] .hero-container h1 {
+    font-size: 36px;
+    letter-spacing: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
