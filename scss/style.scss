@@ -28,6 +28,7 @@ section[class="hero"] {
         .logo {
             margin-right: auto;
             width: 72px;
+            cursor: pointer;
         }
 
         .nav-links {
@@ -70,6 +71,22 @@ section[class="hero"] {
         }
 
     }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 0px;
+        h1 {
+            @extend .fraunces;
+            color: $white;
+            font-size: 60px;
+            letter-spacing: 12px;
+            text-align: center;
+        }
+        img {
+            margin-top: 48px;
+        }
+    }
 
 }
 
@@ -108,10 +125,9 @@ section[class="hero"] {
             .nav-active {
                 transform: translateY(0%);
             }
-    
+
         }
     
     }
-
    
 }
