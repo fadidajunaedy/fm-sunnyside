@@ -328,6 +328,10 @@ section[class="footer"] {
                     .cta-nav {
                         background-color: $yellow;
                         color: $softRed;
+
+                        &:hover {
+                            background-color: hsla(51, 100%, 49%, 0.5);
+                        }
                     }
                 }
             }

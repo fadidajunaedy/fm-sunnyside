@@ -568,6 +568,9 @@ section[class="footer"] .bottom-footer .attribution {
     background-color: #fad400;
     color: #23303e;
   }
+  section[class="hero"] nav .nav-links li .cta-nav:hover {
+    background-color: rgba(250, 212, 0, 0.5);
+  }
   section[class="hero"] nav .burger {
     display: block;
   }
