@@ -175,7 +175,7 @@ section[class="content"] .content-1 a {
 
 section[class="content"] .content-2 {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: img1;
   background-image: url("/images/desktop/image-transform.jpg");
   background-size: cover;
@@ -183,8 +183,8 @@ section[class="content"] .content-2 {
 }
 
 section[class="content"] .content-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: img2;
   background-image: url("/images/desktop/image-stand-out.jpg");
   background-size: cover;
@@ -235,8 +235,8 @@ section[class="content"] .content-4 a {
 }
 
 section[class="content"] .content-5 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: img3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,8 +273,8 @@ section[class="content"] .content-5 p {
 }
 
 section[class="content"] .content-6 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
   grid-area: img4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,6 +391,118 @@ section[class="testi"] .testi-container .card .job {
   font-size: 14px;
   font-weight: 400;
   color: #818498;
+}
+
+section[class="footer"] {
+  width: 100%;
+  height: 100vh;
+  background-color: #62cbb6;
+}
+
+section[class="footer"] .top-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "img1 img2 img3 img4";
+  height: 60vh;
+}
+
+section[class="footer"] .top-footer .img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img1;
+  background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section[class="footer"] .top-footer .img2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img2;
+  background-image: url("/images/desktop/image-gallery-orange.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section[class="footer"] .top-footer .img3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: img3;
+  background-image: url("/images/desktop/image-gallery-cone.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section[class="footer"] .top-footer .img4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: img4;
+  background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section[class="footer"] .bottom-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section[class="footer"] .bottom-footer svg {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+section[class="footer"] .bottom-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section[class="footer"] .bottom-footer ul li {
+  list-style: none;
+  margin: 0 24px;
+  margin-bottom: 48px;
+}
+
+section[class="footer"] .bottom-footer ul li a {
+  text-decoration: none;
+  color: #2C7566;
+}
+
+section[class="footer"] .bottom-footer .socmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 24px;
+}
+
+section[class="footer"] .bottom-footer .socmed img {
+  margin: 0 12px;
+}
+
+section[class="footer"] .bottom-footer .attribution {
+  color: #23303e;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 567px) {

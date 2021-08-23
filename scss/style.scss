@@ -200,6 +200,89 @@ section[class="testi"] {
     }
 }
 
+section[class="footer"] {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(168, 50%, 59%);
+
+    .top-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img1 img2 img3 img4";
+        height: 60vh;
+
+        .img1 {
+            grid-area: img1;
+            background-image: url('/images/desktop/image-gallery-milkbottles.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .img2 {
+            grid-area: img2;
+            background-image: url('/images/desktop/image-gallery-orange.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .img3 {
+            grid-area: img3;
+            background-image: url('/images/desktop/image-gallery-cone.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .img4 {
+            grid-area: img4;
+            background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+
+    .bottom-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                list-style: none;
+                margin: 0 24px;
+                margin-bottom: 48px;
+                a {
+                    text-decoration: none;
+                    color: #2C7566;
+                }
+            }
+        }
+        .socmed {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 24px;
+            img {
+                margin: 0 12px;
+            }
+        }
+
+        .attribution {
+            color: $softRed;
+            font-size: 14px;
+        }
+    }
+}
+
 // ============ MOBILE ============
 @media screen and(max-width: 567px){
 
@@ -320,7 +403,7 @@ section[class="testi"] {
             margin-bottom: 72px;
         }
     
-        .testi-container {
+        .testi-container {  
             flex-direction: column;
             margin: 0px 5%;
     
