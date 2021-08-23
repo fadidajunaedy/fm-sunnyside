@@ -1,0 +1,62 @@
+@mixin content-img($url) {
+    background-image: $url;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin content-text($border) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15%;
+
+    h3 {
+        @extend .fraunces;
+        font-size: 48px;
+        color: $softRed;
+        margin-bottom: 48px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: $darkGrayishBlue;
+        margin-bottom: 48px;
+    }
+
+    a {
+        @extend .fraunces;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: $softRed;
+        height: 24px;
+        width: 132px;
+        padding-bottom: 24px;
+        border-bottom: $border;
+    }
+}
+
+@mixin content-text2($color1, $color2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10% 20%;
+    
+    h3 {
+        margin-top: auto;
+        @extend .fraunces;
+        font-size: 36px;
+        margin-bottom: 24px;
+        color: $color1;
+
+    }
+
+    p {
+        font-size: 18px;
+        color: $color2;
+        font-weight: 600;
+    }
+}

@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'variable';
+@import 'mixin';
 
 * {
     box-sizing: border-box;
@@ -89,6 +90,54 @@ section[class="hero"] {
     }
 
 }
+
+
+section[class="content"] {
+    width: 100%;
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "text1 img1"
+    "img2 text2"
+    "img3 img4";
+
+    .content-1 {
+        grid-area: text1;
+        @include content-text(6px solid hsla(51, 100%, 49%, 0.5));
+    }
+
+    .content-2 {
+        grid-area: img1;
+        @include content-img(url('/images/desktop/image-transform.jpg'));
+    }
+
+    .content-3 {
+        grid-area: img2;
+        @include content-img(url('/images/desktop/image-stand-out.jpg'));
+
+    }
+
+    .content-4 {
+        grid-area: text2;
+        @include content-text(6px solid $yellow);
+    }
+
+    .content-5 {
+        grid-area: img3;
+        @include content-text2(hsl(167, 40%, 24%), hsla(167, 40%, 24%, 0.8));
+        @include content-img(url('/images/desktop/image-graphic-design.jpg'));
+    }
+
+    .content-6 {
+        grid-area: img4;
+        @include content-text2(hsl(198, 62%, 26%), hsla(198, 62%, 26%, 0.8));
+        @include content-img(url('/images/desktop/image-photography.jpg'));
+
+    }
+}
+
 // ============ MOBILE ============
 @media screen and(max-width: 567px){
 
@@ -141,9 +190,6 @@ section[class="hero"] {
             h1 {
                 font-size: 36px;
                 letter-spacing: 6px;
-            }
-            img {
-                
             }
         }
     
