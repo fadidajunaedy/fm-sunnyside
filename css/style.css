@@ -81,6 +81,10 @@ section[class="hero"] nav .nav-links li .cta-nav {
   cursor: pointer;
 }
 
+section[class="hero"] nav .nav-links li .cta-nav:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 section[class="hero"] nav .burger {
   display: none;
   cursor: pointer;
@@ -173,6 +177,10 @@ section[class="content"] .content-1 a {
   border-bottom: 6px solid rgba(250, 212, 0, 0.5);
 }
 
+section[class="content"] .content-1 a:hover {
+  border-bottom: 6px solid #fad400;
+}
+
 section[class="content"] .content-2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -231,7 +239,11 @@ section[class="content"] .content-4 a {
   height: 24px;
   width: 132px;
   padding-bottom: 24px;
-  border-bottom: 6px solid #fad400;
+  border-bottom: 6px solid rgba(254, 122, 108, 0.5);
+}
+
+section[class="content"] .content-4 a:hover {
+  border-bottom: 6px solid #fe7a6c;
 }
 
 section[class="content"] .content-5 {
@@ -487,6 +499,10 @@ section[class="footer"] .bottom-footer ul li a {
   color: #2C7566;
 }
 
+section[class="footer"] .bottom-footer ul li a:hover {
+  color: white;
+}
+
 section[class="footer"] .bottom-footer .socmed {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,8 +512,13 @@ section[class="footer"] .bottom-footer .socmed {
   margin-bottom: 24px;
 }
 
-section[class="footer"] .bottom-footer .socmed img {
+section[class="footer"] .bottom-footer .socmed svg {
+  cursor: pointer;
   margin: 0 12px;
+}
+
+section[class="footer"] .bottom-footer .socmed svg path:hover {
+  fill: white;
 }
 
 section[class="footer"] .bottom-footer .attribution {
