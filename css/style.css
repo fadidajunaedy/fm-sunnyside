@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&display=swap");
-.fraunces, section[class="hero"] nav .nav-links li .cta-nav, section[class="hero"] .hero-container h1, section[class="content"] .content-1 h3, section[class="content"] .content-1 a, section[class="content"] .content-4 h3, section[class="content"] .content-4 a, section[class="content"] .content-5 h3, section[class="content"] .content-6 h3 {
+.fraunces, section[class="hero"] nav .nav-links li .cta-nav, section[class="hero"] .hero-container h1 {
   font-family: 'Fraunces', sans-serif;
 }
 
@@ -9,6 +9,10 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -144,6 +148,7 @@ section[class="content"] .content-1 {
 }
 
 section[class="content"] .content-1 h3 {
+  font-family: 'Fraunces', sans-serif;
   font-size: 48px;
   color: #23303e;
   margin-bottom: 48px;
@@ -157,6 +162,7 @@ section[class="content"] .content-1 p {
 }
 
 section[class="content"] .content-1 a {
+  font-family: 'Fraunces', sans-serif;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
@@ -203,6 +209,7 @@ section[class="content"] .content-4 {
 }
 
 section[class="content"] .content-4 h3 {
+  font-family: 'Fraunces', sans-serif;
   font-size: 48px;
   color: #23303e;
   margin-bottom: 48px;
@@ -216,6 +223,7 @@ section[class="content"] .content-4 p {
 }
 
 section[class="content"] .content-4 a {
+  font-family: 'Fraunces', sans-serif;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
@@ -252,6 +260,7 @@ section[class="content"] .content-5 {
 
 section[class="content"] .content-5 h3 {
   margin-top: auto;
+  font-family: 'Fraunces', sans-serif;
   font-size: 36px;
   margin-bottom: 24px;
   color: #25564b;
@@ -289,6 +298,7 @@ section[class="content"] .content-6 {
 
 section[class="content"] .content-6 h3 {
   margin-top: auto;
+  font-family: 'Fraunces', sans-serif;
   font-size: 36px;
   margin-bottom: 24px;
   color: #19536b;
@@ -365,6 +375,109 @@ section[class="content"] .content-6 p {
   section[class="hero"] .hero-container h1 {
     font-size: 36px;
     letter-spacing: 6px;
+  }
+  section[class="content"] {
+    width: 100%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 50vh 60vh 50vh 60vh 70vh 70vh;
+        grid-template-rows: 50vh 60vh 50vh 60vh 70vh 70vh;
+        grid-template-areas: "img1"  "text1" "img2"  "text2" "img3"  "img4";
+  }
+  section[class="content"] .content-1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: text1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10%;
+  }
+  section[class="content"] .content-1 h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  section[class="content"] .content-1 p {
+    text-align: center;
+  }
+  section[class="content"] .content-1 a {
+    text-align: center;
+  }
+  section[class="content"] .content-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img1;
+    background-image: url("/images/mobile/image-transform.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  section[class="content"] .content-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: img2;
+    background-image: url("/images/mobile/image-stand-out.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  section[class="content"] .content-4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: text2;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10%;
+  }
+  section[class="content"] .content-4 h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  section[class="content"] .content-4 p {
+    text-align: center;
+  }
+  section[class="content"] .content-4 a {
+    text-align: center;
+  }
+  section[class="content"] .content-5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: img3;
+    padding: 10%;
+    background-image: url("/images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  section[class="content"] .content-5 h3 {
+    margin-top: auto;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  section[class="content"] .content-5 p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  section[class="content"] .content-6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: img4;
+    padding: 10%;
+    background-image: url("/images/mobile/image-photography.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  section[class="content"] .content-6 h3 {
+    margin-top: auto;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  section[class="content"] .content-6 p {
+    font-size: 18px;
+    font-weight: 600;
   }
 }
 /*# sourceMappingURL=style.css.map */

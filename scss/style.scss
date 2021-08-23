@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Barlow', sans-serif;
 }
@@ -193,6 +197,55 @@ section[class="content"] {
             }
         }
     
+    }
+
+    section[class="content"] {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 60vh 50vh 60vh 70vh 70vh;
+        grid-template-areas:
+        "img1" 
+        "text1"
+        "img2" 
+        "text2"
+        "img3" 
+        "img4";
+    
+        .content-1 {
+            grid-area: text1;
+            @include content-text-m();
+        }
+    
+        .content-2 {
+            grid-area: img1;
+            @include content-img(url('/images/mobile/image-transform.jpg'));
+        }
+    
+        .content-3 {
+            grid-area: img2;
+            @include content-img(url('/images/mobile/image-stand-out.jpg'));
+    
+        }
+    
+        .content-4 {
+            grid-area: text2;
+            @include content-text-m();
+        }
+    
+        .content-5 {
+            grid-area: img3;
+            @include content-text2-m();
+            @include content-img(url('/images/mobile/image-graphic-design.jpg'));
+        }
+    
+        .content-6 {
+            grid-area: img4;
+            @include content-text2-m();
+            @include content-img(url('/images/mobile/image-photography.jpg'));
+    
+        }
     }
    
 }

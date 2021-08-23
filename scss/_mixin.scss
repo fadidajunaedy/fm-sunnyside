@@ -11,7 +11,7 @@
     padding: 15%;
 
     h3 {
-        @extend .fraunces;
+        font-family: 'Fraunces', sans-serif;
         font-size: 48px;
         color: $softRed;
         margin-bottom: 48px;
@@ -25,7 +25,7 @@
     }
 
     a {
-        @extend .fraunces;
+        font-family: 'Fraunces', sans-serif;
         text-decoration: none;
         font-size: 18px;
         font-weight: 600;
@@ -47,7 +47,7 @@
     
     h3 {
         margin-top: auto;
-        @extend .fraunces;
+        font-family: 'Fraunces', sans-serif;
         font-size: 36px;
         margin-bottom: 24px;
         color: $color1;
@@ -57,6 +57,44 @@
     p {
         font-size: 18px;
         color: $color2;
+        font-weight: 600;
+    }
+}
+
+// ========== MOBILE ==========
+@mixin content-text-m() {
+    align-items: center;
+    padding: 10%;
+
+    h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        text-align: center;
+    }
+}
+
+@mixin content-text2-m() {
+    padding: 10%;
+    
+    h3 {
+        margin-top: auto;
+        font-family: 'Fraunces', sans-serif;
+        font-size: 36px;
+        margin-bottom: 24px;
+      
+
+    }
+
+    p {
+        font-size: 18px;
+     
         font-weight: 600;
     }
 }
