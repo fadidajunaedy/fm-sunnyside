@@ -562,5 +562,77 @@ section[class="testi"] .testi-container .card .job {
     font-size: 18px;
     font-weight: 600;
   }
+  section[class="testi"] {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 48px 0;
+  }
+  section[class="testi"] h3 {
+    font-style: 36px;
+    font-family: 'Fraunces', sans-serif;
+    color: #818498;
+    margin-bottom: 72px;
+  }
+  section[class="testi"] .testi-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 5%;
+  }
+  section[class="testi"] .testi-container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 24px;
+    margin: 24px;
+  }
+  section[class="testi"] .testi-container .card img {
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 48px;
+  }
+  section[class="testi"] .testi-container .card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #5a636c;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  section[class="testi"] .testi-container .card .name {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    color: #23303e;
+  }
+  section[class="testi"] .testi-container .card .job {
+    font-size: 14px;
+    font-weight: 400;
+    color: #818498;
+  }
 }
 /*# sourceMappingURL=style.css.map */

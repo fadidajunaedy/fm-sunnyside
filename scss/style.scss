@@ -302,7 +302,63 @@ section[class="testi"] {
             grid-area: img4;
             @include content-text2-m();
             @include content-img(url('/images/mobile/image-photography.jpg'));
+        }
+    }
+
+    section[class="testi"] {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 48px 0;
+        h3 {
+            font-style: 36px;
+            font-family: 'Fraunces', sans-serif;
+            color: $darkGrayishBlue;
+            margin-bottom: 72px;
+        }
     
+        .testi-container {
+            flex-direction: column;
+            margin: 0px 5%;
+    
+            .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 24px;
+                margin: 24px;
+                img {
+                    width: 90px;
+                    border-radius: 50%;
+                    margin-bottom: 48px;
+                }
+    
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $veryDarkGrayishBlue;
+                    text-align: center;
+                    margin-bottom: 48px;
+                }
+    
+                .name {
+                    font-family: 'Fraunces', sans-serif;
+                    font-size: 18px;
+                    font-weight: 900;
+                    margin-bottom: 12px;
+                    color: $softRed;
+                }
+    
+                .job {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $darkGrayishBlue;
+                }
+            }
         }
     }
    
