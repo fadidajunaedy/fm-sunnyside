@@ -444,5 +444,35 @@ section[class="footer"] {
             }
         }
     }
+
+    section[class="footer"] {
+        width: 100%;
+        height: 90vh;
+        background-color: hsl(168, 50%, 59%);
+    
+        .top-footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "img1 img2"
+            "img3 img4";
+            height: 50vh;
+    
+    
+        }
+    
+        .bottom-footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            svg {
+                margin-top: 48px;
+            }
+            
+        }
+    }
    
 }
